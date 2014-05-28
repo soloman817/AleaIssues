@@ -55,7 +55,8 @@ let correctness (convertD:Expr<uint32 -> 'T>) (convertH:uint32 -> 'T) options =
     let irm = Compiler.Compile(template convertD, options).IRModule
     writeBitcode irm.Bitcode (sprintf "irm_%s.ll" suffix)
 
-    let ptxm = Compiler.Link(irm, worker.Device.Arch).PTXModule
+    //let ptxm = Compiler.Link(irm, worker.Device.Arch).PTXModule
+    let ptxm = Compiler.Link(irm).PTXModule
     writeBitcode ptxm.Bitcode (sprintf "ptxm_%s.ptx" suffix)
 
     use program = worker.LoadProgram(ptxm)
