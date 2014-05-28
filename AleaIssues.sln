@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{0D5062F5-2681-4DC6-AC86-DECFFC3AA484}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SourceCorrelationIssue", "SourceCorrelationIssue\SourceCorrelationIssue.fsproj", "{E8FAC691-DA39-411F-BC8F-BE9B56FB3CBC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E8FAC691-DA39-411F-BC8F-BE9B56FB3CBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8FAC691-DA39-411F-BC8F-BE9B56FB3CBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8FAC691-DA39-411F-BC8F-BE9B56FB3CBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8FAC691-DA39-411F-BC8F-BE9B56FB3CBC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
